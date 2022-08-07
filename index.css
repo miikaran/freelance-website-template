@@ -1,83 +1,10 @@
+section{
+  padding:8rem 0
+}
 
-  body {
-    background: #30333A;
-    font-family: arial;
-  } 
-  .wrapper {
-    position: absolute;
-    top: 41%;
-    left: 95%;
-    transform: translate(-50%, -50%);
-  } 
-  ul {
-    list-style: none;
-  } 
-  ul li {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    margin: 10px 0;
-    cursor: pointer;
-    border-radius: 30px;
-  } 
-  ul li .fa {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    color: rgb(198, 229, 255);
-  } 
-  ul li.facebook{
-    background: #3b589800;
-  } 
-  ul li.twitter{
-    background: #00aeed00;
-  } 
-  ul li.instagram{
-    background: #bc2a8e00;
-  } 
-  ul li.facebook div.slider{
-    background: #3055a5;
-  } 
-  ul li.twitter div.slider{
-    background: #33afe0;
-  } 
-  ul li.instagram div.slider{
-    background: #bd6360;
-  } 
-  ul li.google div.slider{
-    background: #eea59c;
-  } 
-  ul li.whatsapp div.slider{
-    background: #82d47e;
-  } 
-  .slider {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 51px;
-    width: 0px;
-    height: 50px;
-    background: #eebb5c;
-    border-radius: 3px;
-    transition: all 0.5s 0.3s ease;
-  } 
-  .slider p {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 900;
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    opacity: 0;
-    transition: all 0.3s ease;
-  } 
-  ul li:hover .slider {
-    width: 180px;
-    transition: all 0.5s ease;
-  } 
-  ul li:hover .slider p {
-    opacity: 1;
-    transition: all 1s 0.2s ease;
-  }
+.section-heading{
+  margin-top:0
+}
+
+
+
