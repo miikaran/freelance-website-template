@@ -3,20 +3,19 @@
 ### TECHNOLOGIES & SERVICES USED IN THIS:
 
 ***
-                =============================
-    HTML        | for the runko of the website
-                =============================
-    CSS         | for styling
-                =============================
-    JavaScript  | for functionality & animations
-                =============================
-    TailWindCSS | for styling
-                =============================
-    FontAwesome | for icons
-                =============================
-    HyperUI     | for tailwind components   
-                =============================
-    TailWindUI | for tailwind components   
-                =============================
-    
-***
+
+**HTML** - ***runko*** of the website<br>
+
+**CSS** - UI stuff<br>
+
+**TailWind** - UI stuff<br>
+
+**PHP** - functionality
+
+**JavaScript** - functionality & animations<br>
+
+**FontAwesome** - icons<br>
+
+**HyperUI** - components<br>
+
+**TailWindUI** - components
