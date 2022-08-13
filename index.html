@@ -13,16 +13,15 @@
 
 <body style="font-family: Open Sans;">
 
-  <section class="overflow-hidden bg-center bg-no-repeat bg-cover" style="background-image: url('./img/true-agency-o4UhdLv5jbQ-unsplash.jpg');">
+  <section class="overflow-hidden">
 
-  <header class="bg-white">
-
-    <div class="flex items-center h-20 max-w-screen-xl gap-10 mx-auto sm:px-6 lg:px-0">
+  <header class="bg-gray-100">
+    <div class="flex items-center h-24 max-w-screen-2xl gap-10 mx-auto sm:px-6 lg:px-0">
 
       <div class="flex items-center justify-end flex-1 md:justify-between">
         <nav class="hidden md:block" aria-labelledby="header-navigation">
-
-          <ul class="flex items-center font-bold gap-12 text-md text-gray-700">
+          <ul class="flex items-center font-bold gap-12 text-md text-gray-700">           
+               
             <li>
               <a class="transition hover:text-gray-500/75" href="/">
                 ETUSIVU
@@ -31,7 +30,7 @@
 
             <li>
               <a class="transition hover:text-gray-500/75" href="/">
-                TIETOA MEISTÄ
+                TIETOA MEISTÄ <i class="fa fa-solid fa-question"></i>
               </a>
             </li>
 
@@ -44,7 +43,7 @@
             <li>
               <a class="transition hover:text-gray-500/75" href="/">
                 PALVELUT & HINNASTO
-              </a>
+              </a> 
             </li>
           </ul>
         </nav>
@@ -55,17 +54,16 @@
               class="block px-5 py-2.5 text-sm font-bold rounded-full text-white bg-rose-500 hover:bg-rose-700 transition"
               href="/"
             >
-              OTA YHTEYTTÄ!
+              OTA YHTEYTTÄ <i class="fa fa-solid fa-comments mx-1"></i>
             </a>
 
             <a
               class="hidden sm:block px-5 py-2.5 text-sm font-bold text-gray-800 border border-gray-900 hover:bg-orange-400 hover:text-white transition"
               href="/"
             >
-              PYYDÄ TARJOUSTA!
+              PYYDÄ TARJOUSTA
             </a>
           </div>
-
           <button
             class="block p-2.5 text-gray-600 transition bg-gray-100 rounded md:hidden hover:text-gray-600/75"
           >
@@ -90,55 +88,66 @@
     </div>
   </header>
 
-  <div class="p-8 md:p-12 lg:px-16 lg:py-52" style="display: flex; justify-content: center; align-items: center;">
-    <div class="sm:text-center mb-20">
-      <div class="text-4xl font-bold text-white sm:text-5xl md:text-7xl">
-        Edulliset, Joustavat  & Laadukkaat <br> kotisivut saat toimialallesi meiltä!
-        <br><span class="text-sky-300">pyydä tarjous & aloitetaan.</span>
-        <hr class="mt-10 ml-80" style="width: 15vw;">
-      </div>
-      <div class="max-w-xl mx-auto mt-8">
-        <form action="#" class="sm:gap-4 sm:flex">
-          <div class="sm:flex-1">
-            <label for="email" class="sr-only">Email</label>
-  
-            <input
-              type="email"
-              placeholder="Email address"
-              class="w-full p-3 text-gray-800 border transition bg-gray-200 shadow-sm focus:ring focus:outline-none focus:ring-gray-400 focus:border-gray-800"
-            />
+<div class="relative overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">   
+      <main class="mt-20 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-0 xl:mt-10" style="margin-right: 1vw;">
+        <div class="sm:text-center lg:text-left">
+          <h1 class="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl sm:tracking-tight md:text-6xl md:tracking-tight">
+            <span class="block xl:inline"><br>Heips! Meiltä saat</span>
+            <span class="block text-rose-600 xl:inline">Laadukkaat, Edulliset <span class="text-gray-900">&</span> Joustavat</span>
+            <span class="text-gray-900">kotisivut tarpeisiisi nopiasti<span class="text-gray-900">.</span><span class="text-gray-600">.</span><span class="text-gray-300">.</span></span>
+          </h1>
+          <hr style="width: 50%; margin-top: 2vh; border: 1px solid rgba(0, 0, 0, 0.582)">
+          <hr style="width: 30%; margin-top: 2vh; border: 1px solid rgba(0, 0, 0, 0.473)">
+          <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            Onko sinulla hakusessa normaalia markkinahintaa halvemmat, mutta kuitenkin laadultaan yhtä kilpailukykyiset kotisivut toiminnallesi? 
+            Ota yhteyttä & kerro tarpeistasi, niin vastaan hintatarjouksen & muiden tietojen kera!<br><br>
+          <span class="font-bold text-gray-600 mx-1">Jätä sähköpostisi alas, niin otamme yhteyttä!</span></p>
+          <div class="max-w-xl mx-auto mt-4" style="margin-right: 5vw;">
+            <form action="#" class="sm:gap-4 sm:flex">
+              <div class="sm:flex-1">
+      
+                <input
+                  type="email"
+                  placeholder="Sähköpostiosoite"
+                  class="w-full border-2 p-3 text-gray-700 transition bg-white border-gray-400 rounded-md shadow-sm focus:ring focus:outline-none focus:ring-gray-400 focus:border-white"
+                />
+              </div>
+      
+              <button
+                type="submit"
+                class="flex items-center justify-center w-full px-5 py-3 mt-4 text-white transition rounded-md bg-rose-600 sm:mt-0 sm:w-auto group focus:outline-none focus:ring focus:ring-yellow-400"
+              >
+                <span class="text-sm font-bold"> PYYDÄ HINTATARJOUSTA! </span>
+      
+                <svg
+                  class="w-5 h-5 ml-3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </button>
+            </form>
           </div>
-  
-          <button
-            type="submit"
-            class="flex items-center justify-center w-full px-5 py-3 mt-4 text-white transition bg-rose-600 sm:mt-0 sm:w-auto group focus:outline-none focus:ring focus:ring-gray-400"
-          >
-            <span class="text-sm"> LÄHETÄ PYYNTÖ! </span>
-  
-            <svg
-              class="w-5 h-5 ml-3"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </button>
-        </form>
-      </div>
+        </div>
+      </main>
     </div>
   </div>
+  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 mt-16">
+    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="./img/undraw_proud_coder_re_exuy.svg">
+  </div>
+</div>
 
-</section>
-
-  
-  <section>
+  <section class="bg-orange-50">
     <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-0">
       <div class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
         <div
@@ -153,7 +162,7 @@
   
         <div class="lg:py-24">
 
-          <h2 class="text-3xl font-bold sm:text-5xl">TIETOA MEIDÄN TOIMINNASTA <span class="text-gray-700">&</span> NIIDEN YLLÄPITÄJÄSTÄ </h2>
+          <h2 class="text-3xl font-bold sm:text-5xl">TIETOA MEIDÄN TOIMINNASTA <span class="text-gray-700">&</span> YLLÄPITÄJÄSTÄ </h2>
   
           <p class="mt-5 text-gray-600">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
@@ -193,7 +202,7 @@
     </div>
   </section>
 
-  <section class="bg-gray-300">
+  <section>
     <div class="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
         <div class="relative z-10 lg:py-16">
@@ -208,7 +217,7 @@
   
         <div class="relative flex items-center bg-gray-100">
           <span
-            class="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-gray-100 lg:block lg:-left-16"
+            class="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-gray-200 lg:block lg:-left-16"
           ></span>
   
           <div class="p-8 sm:p-16 lg:p-24">
@@ -251,11 +260,6 @@
     </div>
   </section>
   
-
-
-
-
-
 
 
   
@@ -302,31 +306,10 @@
               ></path>
             </svg>
           </a>
-  
-          <a
-            class="text-pink-600 hover:text-opacity-75"
-            href="/dribbble"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Dribbble"
-          >
-            <svg
-              class="w-8 h-8"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </a>
         </div>
   
-        <nav
-          class="relative flex flex-wrap justify-center gap-8 p-8 text-sm font-bold border-4 border-black rounded-xl"
+        <div
+          class="relative flex flex-wrap justify-center gap-8 p-8 text-md text-sm font-bold rounded-xl"
         >
           <a
             class="hover:opacity-75"
@@ -334,7 +317,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            Website
+            ETUSIVU
           </a>
   
           <a
@@ -343,7 +326,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            Uses
+            TIETOA MEISTÄ
           </a>
   
           <a
@@ -352,7 +335,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            Blog
+            REFERENSSIT
           </a>
   
           <a
@@ -361,27 +344,21 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            Portfolio
+            PALVELUT & HINNASTO
           </a>
-        </nav>
-  
-        <p class="max-w-lg mx-auto text-xs text-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, natus
-          tempore illo laborum nam, modi quam sequi amet quo quasi impedit iure
-          eum similique pariatur alias exercitationem, porro perspiciatis esse.
-          Corporis odit consequatur sint sequi.
-  
+
           <a
-            class="block mt-1 text-pink-600 underline decoration-wavy decoration-pink-500 hover:opacity-75"
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            External Link
-          </a>
-        </p>
+          class="hover:opacity-75"
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          OTA YHTEYTTÄ
+        </a>
+      </div>
   
-        <p class="text-xs font-medium">2022 John Doe</p>
+  
+        <p class="text-sm font-medium">2022 @ Miika Rantalaiho</p>
       </div>
     </div>
   </footer>
@@ -389,10 +366,7 @@
 
   
   
-  
-
-  
-
-
+  <!--PLUGARIT-->
+  <script src="https://kit.fontawesome.com/ee711b746a.js" crossorigin="anonymous"></script>
 </body>
 </html>
