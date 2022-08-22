@@ -18,3 +18,8 @@ opacity: 1;
         display: none
     }
 }
+
+
+.hidden{
+    display: none;
+}
