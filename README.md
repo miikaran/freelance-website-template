@@ -1,21 +1,4 @@
-# Clean Website template for my freelance stuff.
 
-### TECHNOLOGIES & SERVICES USED IN THIS:
+<img src="https://user-images.githubusercontent.com/88707539/185848811-402def19-1c8c-4864-91b3-c9aa3392af30.png">
 
-***
 
-**HTML** - ***runko*** of the website<br>
-
-**CSS** - UI stuff<br>
-
-**TailWind** - UI stuff<br>
-
-**PHP** - functionality
-
-**JavaScript** - functionality & animations<br>
-
-**FontAwesome** - icons<br>
-
-**HyperUI** - components<br>
-
-**TailWindUI** - components
