@@ -14,19 +14,23 @@
 
 @media only screen and (max-width: 1023px) {
     .kuva1{
-        display: none
+      display: none
     }
     .herokuva{
       display: none
   }
+  .väliviiva{
+    display: none
+  }
 }
 
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+@media only screen and (max-width: 1023px) {
+
 }
+
+
+
 
 .link {
     position: relative;

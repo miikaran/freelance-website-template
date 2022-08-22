@@ -28,74 +28,101 @@
   =========================================-->
   <header class="bg-gray-100 z-50 top-0 fixed w-full" style=" transition: all 700ms ease;" >
     <div class="flex items-center h-24 max-w-screen-2xl mx-auto sm:px-6 lg:px-0">
-      <a href="/" class="flex items-center py-4 px-2">
-        <img src="./img/HALVATSIVUT.fi.png" alt="HalvatSivut Logo" class="h-6 w-52 mr-2" />
-      </a>
+      <div>
+        <a href="/" class="flex items-center py-4 px-2">
+          <img src="./img/HALVATSIVUT.fi.png" alt="Halvat Sivut Logo" class="h-5 w-40 mr-2">
+        </a>
+      </div>
       <div class="flex items-center justify-end flex-1 md:justify-end">
-        <nav class="hidden md:block" aria-labelledby="header-navigation">
+        <nav class="hidden lg:block" aria-labelledby="header-navigation">
           <ul class="flex font-bold gap-12 text-md text-gray-700"> 
             
             <li>
-              <a class="transition link js-anchor-link" href="#section-1">
-                ETUSIVU
-              </a>
+              <a class="transition link js-anchor-link mt-3" href="#section-1">ETUSIVU</a>
             </li>
 
             <li>
-              <a class="transition link js-anchor-link" href="#section-2">
-                TIETOA MINUSTA <i class="fa fa-solid fa-question"></i>
-              </a>
+              <a class="transition link js-anchor-link mt-3" href="#section-2"> TIETOA MINUSTA <i class="fa fa-solid fa-question"></i></a>
             </li>
 
             <li>
-              <a class="transition link js-anchor-link" href="#section-3">
-                MITÄ TARJOAN?
-              </a>
+              <a class="transition link js-anchor-link mt-3" href="#section-3">MITÄ TARJOAN?</a>
             </li>
 
             <li>
-              <a class="transition link js-anchor-link" href="#section-4">
-                PALVELUT & HINNASTO
-              </a> 
-            </li>        
+              <a class="transition link js-anchor-link mt-3" href="#section-4">PALVELUT & HINNASTO</a> 
+            </li>     
+
+            <a
+            class="block mx-10 js-anchor-link p-4 text-sm font-bold rounded-md text-white bg-rose-500 hover:bg-rose-700 transition"
+            href="#section-5"
+            >
+            OTA YHTEYTTÄ! <i class="fa fa-solid fa-comments mx-1"></i>
+            </a>
+  
           </ul>
         </nav>
 
-        <div class="flex px-10">
-          <div class="sm:gap-4 sm:flex">
+         <!-- Mobile-->
+        <div class="lg:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
 
-            <a
-              class="block js-anchor-link p-4 text-sm font-bold rounded-md text-white bg-rose-500 hover:bg-rose-700 transition"
-              href="#section-5"
-            >
-              OTA YHTEYTTÄ! <i class="fa fa-solid fa-comments mx-1"></i>
-            </a>
-            
-          </div>
-          <button
-            class="block p-2.5 text-gray-600 transition bg-gray-100 rounded md:hidden hover:text-gray-600/75"
-          >
-            <span class="sr-only">Toggle menu</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-32 h-10"
+            <svg class=" w-24 mr-4 h-10 text-gray-500"
+              x-show="!showMenu"
               fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="2"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
         </div>
       </div>
     </div>
-  </header>
-  
+
+    <div class="hidden mobile-menu py-8 mx-4">
+        <ul class="font-bold space-y-7 text-md text-gray-700"> 
+            
+          <li>
+            <a class="transition link js-anchor-link" href="#section-1">
+              ETUSIVU
+            </a>
+          </li>
+
+          <li>
+            <a class="transition link js-anchor-link" href="#section-2">
+              TIETOA MINUSTA <i class="fa fa-solid fa-question"></i>
+            </a>
+          </li>
+
+          <li>
+            <a class="transition link js-anchor-link" href="#section-3">
+              MITÄ TARJOAN?
+            </a>
+          </li>
+
+          <li>
+            <a class="transition link js-anchor-link" href="#section-4">
+              PALVELUT & HINNASTO
+            </a> 
+          </li>  
+          
+          <li>
+            <a
+            class="block js-anchor-link w-2/3 p-4 text-sm font-bold rounded-md text-white bg-rose-500 hover:bg-rose-700 transition"
+            href="#section-5"
+          >
+            OTA YHTEYTTÄ! <i class="fa fa-solid fa-comments mx-1"></i>
+          </a>
+          </li>  
+        </ul>
+    </div>
+  </div>
+  </div>
+</header>
 
 
   <!--=======================================
@@ -111,13 +138,13 @@
               <span class="block text-rose-600 xl:inline">Laadukkaat, Edulliset <span class="text-gray-900">&</span> <span id="typewriter"> Joustavat </span></span>
               <span class="text-gray-900">kotisivut nopialla aikataululla<span class="text-gray-900">.</span><span class="text-gray-600">.</span><span class="text-gray-300">.</span></span>
             </div>
-            <hr style="width: 50%; margin-top: 2vh; border: 1px solid rgba(0, 0, 0, 0.548)">
-            <hr style="width: 25%; margin-top: 2vh; border: 1px solid rgba(0, 0, 0, 0.473)">  
-            <hr style="width: 15%; margin-top: 2vh; border: 1px solid rgba(0, 0, 0, 0.473)"> 
+            <hr class="väliviiva" style="width: 50%; margin-top: 2vh; border: 1px solid rgba(0, 0, 0, 0.548)">
+            <hr class="väliviiva" style="width: 25%; margin-top: 2vh; border: 1px solid rgba(0, 0, 0, 0.473)">  
+            <hr class="väliviiva" style="width: 15%; margin-top: 2vh; border: 1px solid rgba(0, 0, 0, 0.473)"> 
             <p class="mt-3 text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               Onko sulla hakusessa normaalia markkinahintaa halvemmat, mutta kuitenkin laadultaan yhtä kilpailukykyiset kotisivut liiketoiminnallesi? 
               Ota yhteyttä & kerro tarpeistasi niin vastaan hintatarjouksen & muiden tietojen kera!<br>
-            <div class="max-w-2xl mx-auto mt-5" style="margin-right: 5vw;">
+            <div class="max-w-2xl mx-auto mt-5">
               <a class="js-anchor-link inline-flex items-center px-10 py-2 rounded-md text-white bg-gradient-to-br from-rose-700 via-red-500 to-red-600 border border-rose-600 hover:border-rose-800 hover:text-gray-100 active:text-gray-100 focus:outline-none focus:ring" href="#section-5">
                 <span class="text-md py-1 font-bold"> PYYDÄ HINTATARJOUSTA </span>
 
@@ -150,7 +177,7 @@
   <!--=======================================
                 INFO SECTION
     =======================================-->
-  <section class="bg-orange-50">
+  <section class="bg-orange-50" id="section-2">
     <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-0">
       <div class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
         <div
@@ -163,7 +190,7 @@
           />
         </div>
   
-        <div class="lg:py-20 naytaX" id="section-2">
+        <div class="lg:py-20 naytaX">
 
           <h2 class="text-3xl font-bold sm:text-5xl section">TIETOA MINUSTA <span class="text-gray-700">&</span> TOIMINNASTANI </h2>
   
@@ -617,21 +644,19 @@
     <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
       <div class="text-5xl text-gray-800 flex justify-center text-center py-2 font-bold mt-10">OTA MINUUN YHTEYTTÄ<br>& TILAA PALVELUITA!</div>
       <p class="text-center text-lg py-4">041 798 2160 - rantalaihomiika@gmail.com
-        <br><br> <i class="fa fa-brands fa-facebook text-blue-600 bg-gray-2 text-3xl border 00 py-2 px-4"></i>
-        <i class="fa fa-brands fa-twitter text-blue-600 bg-gray-2 border text-3xl  py-2 px-4"></i>
-        <i class="fa fa-brands fa-instagram text-red-600 bg-gray-2 border text-3xl py-2 px-4"></i>
+        <a href="https://www.facebook.com/profile.php?id=100085091761540"><br><br> <i class="fa fa-brands fa-facebook text-blue-600 bg-gray-2 text-3xl border 00 py-2 px-4"></i></a>
       </p>
       <div class="mt-4">
         <div class="p-8 bg-white shadow-lg lg:p-12">
           <form target="_blank" action="" method="POST" name="lomake" id="lomake" class="space-y-4">
             <div>
               <label class="sr-only">Etunimi</label>
-              <input class="w-full  p-3 border text-sm border-gray-200 rounded-lg" placeholder="Etunimi" type="text" id="etunimi" onblur="tarkistaViesti(1)" />
+              <input class="w-full  p-3 border text-sm border-gray-200 rounded-lg" placeholder="Etunimi" type="text" id="etunimi" name="etunimi" onblur="tarkistaViesti(1)" />
             </div>
 
             <div>
               <label class="sr-only">Sukunimi</label>
-              <input class="w-full p-3 border text-sm border-gray-200 rounded-lg" placeholder="Sukunimi" type="text" id="sukunimi" onblur="tarkistaViesti(2)" />
+              <input class="w-full p-3 border text-sm border-gray-200 rounded-lg" placeholder="Sukunimi" name="sukunimi" type="text" id="sukunimi" onblur="tarkistaViesti(2)" />
             </div>
 
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -641,6 +666,7 @@
                   class="w-full p-3 border text-sm border-gray-200 rounded-lg"
                   placeholder="Sähköpostiosoite"
                   id="sahkoposti"
+                  name="sahkoposti"
                   onblur="tarkistaViesti(3)"
                 />
               </div>
@@ -651,6 +677,7 @@
                   class="w-full p-3 text-sm border border-gray-200 rounded-lg"
                   placeholder="Puhelinnumero"
                   id="puhelinnumero"
+                  name="puhelinnumero"
                   onblur="tarkistaViesti(4)"
                 />
               </div>
@@ -664,6 +691,7 @@
                 placeholder="Viesti"
                 rows="8"
                 id="viesti" 
+                name="viesti"
                 onblur="tarkistaViesti(5)"
               ></textarea>
             </div>
@@ -674,7 +702,7 @@
                 type="submit"
                 class="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-rose-500 sm:w-auto"
               >
-                <span class="font-medium"> <b>Lähetä viesti! </b> (Samalla hyväksyt<a class="underline" href="#section-1"> käyttöehdot </a>) </span>
+                <span class="font-medium"> <b>Lähetä viesti! (Samalla hyväksyt<a class="underline" href="#section-1"> käyttöehdot</a>) </b> </span>
               </button>
             </div>
             <br>
