@@ -1,5 +1,7 @@
 
-    // FADE IN EFFECTI //
+  /* =================================================================
+                  SCROLL FADE IN EFFECTI
+   ================================================================= */
     function animaatio() {
 
     const nayta = document.querySelectorAll(".naytaX");
@@ -25,7 +27,9 @@
 
 
 
-  // TYPEWRITER EFFECTI //
+ /* =================================================================
+                  TYPE WRITER EFFECTI
+   ================================================================= */
   var typeWriterElement = document.getElementById('typewriter');
 
   var textArray = ["Joustavat", "Kevyet", "Mahtavat", "Modernit"];
@@ -53,7 +57,7 @@
     if ( i < text.length+1 ) {
 
       typeWriterElement.innerHTML = text.substring(0, i++);
-      var rndTyping = 250 - Math.random() * 100;
+      var rndTyping = 200 - Math.random() * 100;
       setTimeout( function () { 
 
         typeWriter(text, i++, cb)
@@ -92,11 +96,15 @@
 
   // SCROLL SMOOTH //
   $('.js-anchor-link').click(function(e){
+
     e.preventDefault();
     var target = $($(this).attr('href'));
+
     if(target.length){
+
       var scrollTo = target.offset().top;
-      $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+      $('body, html').animate({scrollTop: scrollTo+'px'}, 900);
+
     }
   });
 
@@ -114,10 +122,6 @@
   const sahkoposti = document.getElementById("sahkoposti");
   const puhelinnumero = document.getElementById("puhelinnumero");
   const viesti = document.getElementById("viesti");
-
-  //checkboxit
-  let kayttoehdot = document.getElementById("kayttoehdot");
-
 
   //Auttaa viestin lähetysvaiheessa tarkistamaan kaikki kohdat.
   var tarkistus1 = false;
@@ -143,6 +147,14 @@
       return sahkopostiSL.test(String(sahkoposti).toLowerCase());
   }
 
+    //Sähköposti tarkistus
+    const sahkopostiTarkistus1 = sahkoposti1 => {
+
+      const sahkopostiSL = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return sahkopostiSL.test(String(sahkoposti1).toLowerCase());
+  }
+
+
 
   //Puhelinnumero tarkistus
   const puhelinnumeroTarkistus = puhelinnumero => {
@@ -152,96 +164,97 @@
       
   }
 
-  //Poistaa tyhjät kohdat.
-  const etunimiArvo = etunimi.value.trim();
-  const sukunimiArvo = sukunimi.value.trim();
-  const sahkopostiArvo = sahkoposti.value.trim();
-  const puhelinnumeroArvo = puhelinnumero.value.trim();
-  const viestiArvo = viesti.value.trim();
-
-
   //Tarkistaa lomakkeen inputtien mahdolliset epäkohdat.
   const tarkistaViesti = (t) =>{
-      
-      //Muuttaa reunojen väriä & ilmoitusta inputin mukaan.
-      //etunimi
-      if(t>=1 || t==0) {
-          if(etunimiArvo == "" || null) {
-              etunimi.style.borderColor = "red";
-              tarkistus1 = false;
-          }
-          else {
-              etunimi.style.borderColor = "green";
-              tarkistus1 = true;
-          }
-      }
-
-      //sukunimi
-      if(t>=2 || t==0) {
-          if(sukunimiArvo == "" || null) {
-              sukunimi.style.borderColor = "red";
-              tarkistus2 = false;
-          }
-          else {
-              sukunimi.style.borderColor = "green";
-              tarkistus2 = true;
-          }
-      }
-
-      //sahkoposti
-      if(t>=3 || t==0) {
-          if(sahkopostiArvo == "" || null) {
-              sahkoposti.style.borderColor = "red";
-              tarkistus3 = false;
-          }
-          else if (!sahkopostiTarkistus(sahkopostiArvo)) {
-              sahkoposti.style.borderColor = "red";
-              tarkistus3 = false;
-          }
-          else{
-              sahkoposti.style.borderColor = "green";
-              tarkistus3 = true;
-          }
-      }
-
-      //puhelinnumero
-      if(t>=4 || t==0) {
-          if(puhelinnumeroArvo == "" || null) {
-              puhelinnumero.style.borderColor = "red";
-              tarkistus4 = false;
-          }
-          else if (!puhelinnumeroTarkistus(puhelinnumeroArvo)) {
-              puhelinnumero.style.borderColor = "red";
-              tarkistus4 = false;
-          }
-          else{
-              puhelinnumero.style.borderColor = "green";
-              tarkistus4 = true;
-          }
-      }
-
-      //viesti
-      if(t>=5 || t==0) {
-          if(viestiArvo == "" || null) {
-              viesti.style.borderColor = "red";
-              tarkistus5 = false;
-          }
-          else {
-              viesti.style.borderColor = "green";
-              tarkistus5 = true;
-          }
-      }
-
-      //debuggausta varten
-      console.log(("ETUNIMI: "), tarkistus1, 
-          (" SUKUNIMI: "), tarkistus2, 
-          (" SAHKOPOSTI: "), tarkistus3, 
-          (" PUHELINNUMERO: "), tarkistus4, 
-          (" VIESTI: "),tarkistus5,
-          (" KAYTTOEHDOT: "),tarkistus6);
-  }
+    
+    //Poistaa tyhjät kohdat.
+    const etunimiArvo = etunimi.value.trim();
+    const sukunimiArvo = sukunimi.value.trim();
+    const sahkopostiArvo = sahkoposti.value.trim();
+    const puhelinnumeroArvo = puhelinnumero.value.trim();
+    const viestiArvo = viesti.value.trim();
 
 
+    //Muuttaa reunojen väriä & ilmoitusta inputin mukaan.
+    //etunimi
+    if(t>=1 || t==0) {
+        if(etunimiArvo == "" || null) {
+            etunimi.style.borderColor = "red";
+            tarkistus1 = false;
+        }
+        else {
+            etunimi.style.borderColor = "green";
+            tarkistus1 = true;
+        }
+    }
+
+    //sukunimi
+    if(t>=2 || t==0) {
+        if(sukunimiArvo == "" || null) {
+            sukunimi.style.borderColor = "red";
+            tarkistus2 = false;
+        }
+        else {
+            sukunimi.style.borderColor = "green";
+            tarkistus2 = true;
+        }
+    }
+
+    //sahkoposti
+    if(t>=3 || t==0) {
+        if(sahkopostiArvo == "" || null) {
+            sahkoposti.style.borderColor = "red";
+            tarkistus3 = false;
+        }
+        else if (!sahkopostiTarkistus(sahkopostiArvo)) {
+            sahkoposti.style.borderColor = "red";
+            tarkistus3 = false;
+        }
+        else{
+            sahkoposti.style.borderColor = "green";
+            tarkistus3 = true;
+        }
+    }
+
+    //puhelinnumero
+    if(t>=4 || t==0) {
+        if(puhelinnumeroArvo == "" || null) {
+            puhelinnumero.style.borderColor = "red";
+            tarkistus4 = false;
+        }
+        else if (!puhelinnumeroTarkistus(puhelinnumeroArvo)) {
+            puhelinnumero.style.borderColor = "red";
+            tarkistus4 = false;
+        }
+        else{
+            puhelinnumero.style.borderColor = "green";
+            tarkistus4 = true;
+        }
+    }
+
+    //viesti
+    if(t>=5 || t==0) {
+        if(viestiArvo == "" || null) {
+            viesti.style.borderColor = "red";
+            tarkistus5 = false;
+        }
+        else {
+            viesti.style.borderColor = "green";
+            tarkistus5 = true;
+        }
+    }
+
+    //debuggausta varten
+    console.log(("ETUNIMI: "), tarkistus1, 
+        (" SUKUNIMI: "), tarkistus2, 
+        (" SAHKOPOSTI: "), tarkistus3, 
+        (" PUHELINNUMERO: "), tarkistus4, 
+        (" VIESTI: "),tarkistus5,
+        (" KAYTTOEHDOT: "),tarkistus6,
+        ("JASENYYS: "),jasenyys, 
+        ("TUKIPALVELUT: "),tukipalvelut);
+
+}
 
 
   //Lähettää viestin PHP:lle
@@ -265,7 +278,7 @@
 
             //Luo pyynnön lomake tietojen lähetykseen PHP:lle
             let xhr = new XMLHttpRequest();
-            xhr.open("POST", "./php/Otayhteytta.php", true);
+            xhr.open("POST", "./php/index.php", true);
             
             let formData = new FormData(form);
             console.log(formData);
@@ -273,9 +286,11 @@
             //Lähettää PHP:lle
             xhr.send(formData);
             location.reload();
-            alert("Viesti on lähetetty! Mikäli vastausta ei kuulu, ota rohkeasti yhteyttä suoraan sähköpostin kautta.")
+            alert('Viesti lähetetty!')
+
 
           }
       
       }
   }
+
