@@ -27,6 +27,31 @@
 
 
 
+  function animaatio2() {
+
+    const nayta = document.querySelectorAll(".naytaY");
+
+    //laskee elementtiä ennen olevan yläosan koon.
+    for (let i = 0; i < nayta.length; i++) {
+
+      const ikkunanKorkeus = window.innerHeight;
+
+      const elementYlaosa = nayta[i].getBoundingClientRect().top;
+      const elementNakyviin = 150;
+
+      //renderöi animaation 130px elementin jälkeen.
+      if (elementYlaosa < ikkunanKorkeus - elementNakyviin) {
+        nayta[i].classList.add("active");
+      } 
+      else {   
+        nayta[i].classList.remove("active");      
+      }
+    }
+  }
+  window.addEventListener("scroll", animaatio);
+
+
+
  /* =================================================================
                   TYPE WRITER EFFECTI
    ================================================================= */
@@ -111,9 +136,8 @@
 
 
 /* =================================================================
-                  CONTACT FORM VALIDATION
+                  CONTACT FORM VALIDAATIO
    ================================================================= */
-
 
   //Käyttäjän vastaus- osiot
   const lomake = document.getElementById("lomake");
@@ -257,7 +281,12 @@
 }
 
 
-  //Lähettää viestin PHP:lle
+  
+/* =================================================================
+                  CONTACT FORM LÄHETYS
+  ================================================================== */
+
+
   const viestinLahetys = () => {
 
       //Tarkistaa kaikki kentät.

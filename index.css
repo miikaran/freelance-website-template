@@ -1,5 +1,4 @@
 
-
 .naytaX{
     position: relative;
     transform: translateX(-250px);
@@ -8,8 +7,8 @@
 }
   
 .naytaX.active{
-transform: translateX(0);
-opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
 }
 
 
@@ -17,9 +16,4 @@ opacity: 1;
     .kuva1{
         display: none
     }
-}
-
-
-.hidden{
-    display: none;
 }
