@@ -313,9 +313,17 @@
            console.log("viesti lähetys");
  
            const form = document.querySelector("form");
+           const viestiLahetetty = document.getElementById("viestiLahetetty")
  
            form.onsubmit = (e)=>{
- 
+
+            viestiLahetetty.removeAttribute("hidden");
+            
+            setTimeout(function(){
+              window.location.reload();
+           }, 3000);
+    
+          
              e.preventDefault();
  
              //Luo pyynnön lomake tietojen lähetykseen PHP:lle
@@ -327,9 +335,6 @@
  
              //Lähettää PHP:lle
              xhr.send(formData);
-             alert('Viesti lähetetty!')
- 
- 
            }
        
        }

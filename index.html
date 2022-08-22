@@ -696,15 +696,20 @@
               ></textarea>
             </div>
 
+            <div class="italic text-gray-500 font-bold">Kun lähetät viestin, niin hyväksyt, että annettuja
+               tietojasi käytetään vain <br> ja ainoastaan palveluiden tarjoamisen mahdollistamiseksi & keskustelun luomiseksi.😊 </div>
+
             <div class="mt-4">
               <button
                 onclick="viestinLahetys()"
                 type="submit"
                 class="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-rose-500 sm:w-auto"
               >
-                <span class="font-medium"> <b>Lähetä viesti! (Samalla hyväksyt<a class="underline" href="#section-1"> käyttöehdot</a>) </b> </span>
+                <span class="font-medium"> <b>Lähetä viesti!</b> </span>
               </button>
             </div>
+            <br><br>
+            <span id="viestiLahetetty" hidden class=" bg-green-200 rounded-lg px-4 py-4 font-bold">Viestisi on nyt lähetetty!</span>
             <br>
           </form>
         </div>
