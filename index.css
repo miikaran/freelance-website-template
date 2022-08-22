@@ -1,0 +1,20 @@
+
+
+.naytaX{
+    position: relative;
+    transform: translateX(-250px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+  
+.naytaX.active{
+transform: translateX(0);
+opacity: 1;
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .kuva1{
+        display: none
+    }
+}
