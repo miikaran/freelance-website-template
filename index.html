@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./index.css">
-    <link rel="icon" type="image/x-icon" href="./img/HALVATSIVUT.fi.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=======================================
+                META TAGS FOR SEO
+    =========================================-->
     <meta name="description" content="Nyt saat minulta halvat, laadukkaat & joustavat kotisivut nopeasti!
     Hinta alkaen jopa vain 150€. Ota yhteyttä & annan hintatarjouksen nettisivuillesi!">
     <meta name="description" content="Etsitkö halpoja, mutta kuitenkin laadukkaita kotisivuja yrityksellesi, tai muulle liiketoiminnallesi? Hinta meiltä alk. 150€ ">
@@ -15,7 +18,7 @@
     <title>Etusivu | Edulliset Kotisivut</title>
 </head>
 
-<body style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+<body  style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
   
 
   <section class="overflow-hidden">
@@ -23,14 +26,14 @@
   <!--=======================================
                 NAVIGATION BAR
   =========================================-->
-  <header class="bg-gray-100 top-0 z-50">
+  <header class="bg-gray-100 z-50 top-0 fixed w-full" style=" transition: all 700ms ease;" >
     <div class="flex items-center h-24 max-w-screen-2xl mx-auto sm:px-6 lg:px-0">
-      <a href="/">         
-        <img src="./img/HALVATSIVUT.fi.png" width="200" alt="HalvatSivut Logo">  
-      </a> 
+      <a href="/" class="flex items-center py-4 px-2">
+        <img src="./img/HALVATSIVUT.fi.png" alt="HalvatSivut Logo" class="h-6 w-52 mr-2" />
+      </a>
       <div class="flex items-center justify-end flex-1 md:justify-end">
         <nav class="hidden md:block" aria-labelledby="header-navigation">
-          <ul class="flex  font-bold gap-12 text-md text-gray-700"> 
+          <ul class="flex font-bold gap-12 text-md text-gray-700"> 
             
             <li>
               <a class="transition link js-anchor-link" href="#section-1">
@@ -58,11 +61,11 @@
           </ul>
         </nav>
 
-        <div class="flex ml-40">
+        <div class="flex px-10">
           <div class="sm:gap-4 sm:flex">
 
             <a
-              class="block px-5 js-anchor-link py-2.5 text-sm font-bold rounded-md text-white bg-rose-500 hover:bg-rose-700 transition"
+              class="block js-anchor-link p-4 text-sm font-bold rounded-md text-white bg-rose-500 hover:bg-rose-700 transition"
               href="#section-5"
             >
               OTA YHTEYTTÄ! <i class="fa fa-solid fa-comments mx-1"></i>
@@ -92,25 +95,26 @@
       </div>
     </div>
   </header>
+  
 
 
   <!--=======================================
                 HERO SECTION
    =======================================-->
-  <div class="relative overflow-hidden" id="section-1">
+  <div class="relative overflow-hidden main" id="section-1">
     <div class="max-w-7xl mx-auto">
       <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">   
-        <main class="mt-20 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-0 xl:mt-12" style="margin-right: 1vw;">
+        <main class="mt-32 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-0 xl:mt-40" style="margin-right: 1vw;">
           <div class="sm:text-center lg:text-left">
-            <h1 class="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl sm:tracking-tight md:text-6xl md:tracking-tight">
+            <div class="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl sm:tracking-tight md:text-6xl md:tracking-tight">
               <span class="block xl:inline"><br>Heips! Multa hankit</span>
               <span class="block text-rose-600 xl:inline">Laadukkaat, Edulliset <span class="text-gray-900">&</span> <span id="typewriter"> Joustavat </span></span>
               <span class="text-gray-900">kotisivut nopialla aikataululla<span class="text-gray-900">.</span><span class="text-gray-600">.</span><span class="text-gray-300">.</span></span>
-            </h1>
+            </div>
             <hr style="width: 50%; margin-top: 2vh; border: 1px solid rgba(0, 0, 0, 0.548)">
             <hr style="width: 25%; margin-top: 2vh; border: 1px solid rgba(0, 0, 0, 0.473)">  
             <hr style="width: 15%; margin-top: 2vh; border: 1px solid rgba(0, 0, 0, 0.473)"> 
-            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            <p class="mt-3 text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               Onko sulla hakusessa normaalia markkinahintaa halvemmat, mutta kuitenkin laadultaan yhtä kilpailukykyiset kotisivut liiketoiminnallesi? 
               Ota yhteyttä & kerro tarpeistasi niin vastaan hintatarjouksen & muiden tietojen kera!<br>
             <div class="max-w-2xl mx-auto mt-5" style="margin-right: 5vw;">
@@ -137,7 +141,7 @@
         </main>
       </div>
     </div>
-    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 mt-16 herokuva">
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 mt-32 herokuva ">
       <img class="h-56 object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="./img/undraw_proud_coder_re_exuy.svg" alt="Nainen kotisivuja näyttämässä">
     </div>
   </div>
@@ -261,7 +265,57 @@
   </section>
 
 
+  
+  <!--=======================================
+            DEVELOPMENT PROCESS
+    =======================================-->
 
+  <div class="">
+    <div class="relative after:inset-x-0 after:h-0.5 after:absolute after:top-1/2 after:-translate-y-1/2 after:block after:rounded-lg after:bg-gray-100">
+      <ol class="relative z-10 flex justify-between text-sm font-medium text-gray-500">
+        <li class="flex items-center p-2 bg-white">
+          <span
+            class="w-8 h-7.5 text-[20px] font-bold leading-6 bg-gray-100 text-center rounded-full"
+          >
+            1
+          </span>
+
+          <span class="hidden text-rose-400 text-3xl sm:block sm:ml-2"> SUUNNITTELU </span>
+        </li>
+
+        <li class="flex items-center p-2 bg-white">
+          <span
+            class="w-8 h-7.5 text-[20px] font-bold leading-6 text-center bg-gray-100 rounded-full"
+          >
+            2
+          </span>
+
+          <span class="hidden text-rose-400 text-3xl sm:block sm:ml-2"> KEHITYS </span>
+        </li>
+
+        <li class="flex items-center p-2 bg-white">
+          
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="inline w-10 h-10 text-green-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+
+          <span class="hidden text-rose-400 text-3xl sm:block sm:mr-10"> JULKAISU </span>
+        </li>
+      </ol>
+    </div>
+  </div>
+  
 
   <!--=======================================
                 PRICING SECTION
@@ -269,148 +323,8 @@
   <section class="text-gray-800" id="section-4">
     <div class="max-w-screen-2xl px-4 py-16 mx-auto sm:px-6 lg:px-8"> 
       <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-2">
-        <article class="block p-6 text-center border border-gray-700 shadow-xl">
-          <h5 class="text-4xl font-bold text-gray-800">PERUS YRITYS PAKETTI</h5>
-          <hr class="border-2 border-gray-400 mt-5">
-          <h6 class="mt-4 text-sm text-gray-700 font-medium">Tarvitsetko pienet & kevyet kotisivut, jolla voit markkinoida toimintaasi, ja josta löytyy muun muassa tietoa toiminnastasi, yhteystiedot & yhteydenottolomake? <br><span class="font-bold" style="font-size: 1.15em"> Siinä tapauksessa tämä on täydellinen paketti sinulle!</span></h6>
-        
-          <div class="mt-4 text-gray-800">
-            <h6>
-              <span class="inline text-5xl font-bold">250</span>
-              <span class="text-3xl">€</span>
-              <span class="text-sm text-gray-600"> + alv 24%</span>
-            </h6>
-          </div>
-        
-          <ul class="mt-5 space-y-5 text-gray-800">
 
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="inline w-10 h-10 text-green-300"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              Sisältää Etusivun + 1-2 pienempää sisältösivua & yhteydenottolomakkeen.
-            </li>
-
-
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="inline w-10 h-10 text-green-300"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-        
-              Sivun suunnittelu & asiakkaan toiveiden lisäys. Asiakkaan toiveiden mukaan siis mennään. 
-            </li>
-        
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="inline w-10 h-10 text-green-300"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-        
-              Sivujen valmistus aika pienemmissä sivuissa jopa vain 1 viikko.
-            </li>
-        
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="inline w-10 h-10  text-green-300"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-        
-              Responsiivinen & Joustava (Sisältö helposti muokattavissa WebHotellin sisäänrakennetulla editorilla.)
-            </li>
-        
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="inline w-10 h-10 text-green-300"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-        
-              Sivujen julkaisu nettiin & asiakkaan auttaminen alkuun, sekä muokkausten näyttäminen.
-            </li>
-        
-            <li>
-
-              <span class="text-red-500 font-bold mx-2 text-2xl">X</span>
-        
-        
-              Hakukoneoptimointi
-            </li>
-          </ul>
-          <a
-          class="js-anchor-link inline-flex items-center px-8 py-3 mt-8 text-gray-100 font-bold bg-rose-500 hover:bg-gray-700 hover:text-gray-200 active:text-gray-900 focus:outline-none focus:ring"
-          href="#section-5"
-        >
-          <span class="text-lg">TILAA </span>
-
-          <svg
-            class="w-5 h-5 ml-3"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
-          </svg>
-          </a>
-        </article>
-
-        <article class="block p-6 text-center border border-gray-700 shadow-xl">
+        <article class="block p-6 text-center border-4 border-gray-300  shadow-2xl">
           <h5 class="text-4xl font-bold text-gray-800">ALOITUS PAKETTI</h5>
           <hr class="border-2 border-gray-400 mt-5">
           <h6 class="mt-4 text-sm text-gray-700 font-medium">Yhden sivun nettisivut toimivat ns "käyntikorttina" yritykselle. Etusivulta löytyy haluamaasi tietoa, yhteystiedot & yhteydenottolomake</h6>
@@ -533,6 +447,147 @@
           href="#section-5"
         >
           <span class="text-lg">TILAA! </span>
+
+          <svg
+            class="w-5 h-5 ml-3"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+          </a>
+        </article>
+
+        <article class="block p-6 text-center border-4 border-gray-300  shadow-2xl">
+          <div class="text-4xl font-bold text-gray-800">PERUS YRITYS PAKETTI</div>
+          <hr class="border-2 border-gray-400 mt-5">
+          <div class="mt-4 text-sm text-gray-700 font-medium">Tarvitsetko pienet & kevyet kotisivut, jolla voit markkinoida toimintaasi, ja josta löytyy muun muassa tietoa toiminnastasi, yhteystiedot & yhteydenottolomake? <br><span class="font-bold" style="font-size: 1.15em"> Siinä tapauksessa tämä on täydellinen paketti sinulle!</span></div>
+        
+          <div class="mt-4 text-gray-800">
+            <h6>
+              <span class="inline text-5xl font-bold">250</span>
+              <span class="text-3xl">€</span>
+              <span class="text-sm text-gray-600"> + alv 24%</span>
+            </h6>
+          </div>
+        
+          <ul class="mt-5 space-y-5 text-gray-800">
+
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="inline w-10 h-10 text-green-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              Sisältää Etusivun + 1-2 pienempää sisältösivua & yhteydenottolomakkeen.
+            </li>
+
+
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="inline w-10 h-10 text-green-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+        
+              Sivun suunnittelu & asiakkaan toiveiden lisäys. Asiakkaan toiveiden mukaan siis mennään. 
+            </li>
+        
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="inline w-10 h-10 text-green-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+        
+              Sivujen valmistus aika pienemmissä sivuissa jopa vain 1 viikko.
+            </li>
+        
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="inline w-10 h-10  text-green-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+        
+              Responsiivinen & Joustava (Sisältö helposti muokattavissa WebHotellin sisäänrakennetulla editorilla.)
+            </li>
+        
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="inline w-10 h-10 text-green-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+        
+              Sivujen julkaisu nettiin & asiakkaan auttaminen alkuun, sekä muokkausten näyttäminen.
+            </li>
+        
+            <li>
+
+              <span class="text-red-500 font-bold mx-2 text-2xl">X</span>
+        
+        
+              Hakukoneoptimointi
+            </li>
+          </ul>
+          <a
+          class="js-anchor-link inline-flex items-center px-8 py-3 mt-8 text-gray-100 font-bold bg-rose-500 hover:bg-gray-700 hover:text-gray-200 active:text-gray-900 focus:outline-none focus:ring"
+          href="#section-5"
+        >
+          <span class="text-lg">TILAA </span>
 
           <svg
             class="w-5 h-5 ml-3"

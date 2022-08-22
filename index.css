@@ -16,6 +16,9 @@
     .kuva1{
         display: none
     }
+    .herokuva{
+      display: none
+  }
 }
 
 
@@ -50,3 +53,12 @@
     visibility: visible;
     transform: scaleX(1);
   }
+
+
+header.scroll-up{
+    transform: translateY(0);
+}
+
+header.scroll-down{
+    transform: translateY(-100%);
+}
