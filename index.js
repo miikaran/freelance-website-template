@@ -380,7 +380,7 @@
  
              //Luo pyynnön lomake tietojen lähetykseen PHP:lle
              let xhr = new XMLHttpRequest();
-             xhr.open("POST", "./php/index.php", true);
+             xhr.open("POST", "./index.php", true);
              
              let formData = new FormData(form);
              console.log(formData);
