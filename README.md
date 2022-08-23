@@ -10,11 +10,17 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 
+## <a href="https://www.halvatsivut.fi">halvatsivut.fi</a> 
 
-## AUDIT RESULTS |
- ![audit](https://user-images.githubusercontent.com/88707539/185891131-34f0879d-fa7c-454e-a003-ed915520a318.PNG)
+<br>
 
- ## <a href="https://www.halvatsivut.fi">halvatsivut.fi</a> 
+> ## MOBILE
+> ![audit](https://user-images.githubusercontent.com/88707539/185891131-34f0879d-fa7c-454e-a003-ed915520a318.PNG)
+ 
+> ## PC
+> ![audit2](https://user-images.githubusercontent.com/88707539/186084884-c35603d7-ee47-4f59-bbb5-fc61d200d7c2.PNG)
+
+
  
  
 
