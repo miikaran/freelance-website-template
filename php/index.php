@@ -14,7 +14,7 @@
 
     if(filter_var($sahkoposti, FILTER_VALIDATE_EMAIL)){
 
-      $receiver = "rantalaihomiika@gmail.com"; //Saajan sahkopostiosoite
+      $receiver = "miika@halvatsivut.fi"; //Saajan sahkopostiosoite
       $subject = "Henkilolta: $etunimi <$sahkoposti>";
 
       //viestin rakenne

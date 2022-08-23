@@ -187,7 +187,7 @@
     ================================================================= */
     jsScroll = document.getElementsByClassName('js-scroll')[0],
     height = jsScroll.getBoundingClientRect().height - 1,
-    speed = 0.05
+    speed = 0.25
 
     var offset = 0
 
@@ -380,7 +380,7 @@
  
              //Luo pyynnön lomake tietojen lähetykseen PHP:lle
              let xhr = new XMLHttpRequest();
-             xhr.open("POST", "./index.php", true);
+             xhr.open("POST", "./php/index.php", true);
              
              let formData = new FormData(form);
              console.log(formData);
