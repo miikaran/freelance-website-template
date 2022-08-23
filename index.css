@@ -12,6 +12,25 @@
 }
 
 
+.naytaZmain{
+  -webkit-perspective: 1000;
+}
+
+
+.naytaZ{
+  position: relative;
+  transform: translateZ(-142px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+
+.naytaZ.active{
+  transform: translateZ(0);
+  opacity: 1;
+}
+
+
+
 @media only screen and (max-width: 1023px) {
     .kuva1{
       display: none

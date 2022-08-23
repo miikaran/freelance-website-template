@@ -1,6 +1,6 @@
   
   /* =================================================================
-                  TOGGLE HAMBURGER MENUUUU
+                     TOGGLE HAMBURGER MENUUUU
    ================================================================= */
    const btn = document.querySelector("button.mobile-menu-button");
    const menu = document.querySelector(".mobile-menu");
@@ -13,7 +13,7 @@
  
  
    /* =================================================================
-                   NAVBAR SCROLL REVEAL HOMMA
+                    NAVBAR SCROLL REVEAL HOMMA
     ================================================================= */
    const body = document.body;
    const header = document.querySelector("header");
@@ -42,9 +42,9 @@
    
    
    /* =================================================================
-                   SCROLL FADE IN EFFECTI
+                        SCROLL FADE IN EFFECTI
     ================================================================= */
-     function animaatio() {
+     function fadeInAnimaatio() {
  
      const nayta = document.querySelectorAll(".naytaX");
  
@@ -54,7 +54,7 @@
        const ikkunanKorkeus = window.innerHeight;
  
        const elementYlaosa = nayta[i].getBoundingClientRect().top;
-       const elementNakyviin = 150;
+       const elementNakyviin = 100;
  
        //renderöi animaation 130px elementin jälkeen.
        if (elementYlaosa < ikkunanKorkeus - elementNakyviin) {
@@ -65,13 +65,41 @@
        }
      }
    }
-   window.addEventListener("scroll", animaatio);
+   window.addEventListener("scroll", fadeInAnimaatio);
+
+
+
+   /* =================================================================
+                        SCROLL ZOOM IN EFFECTI
+    ================================================================= */
+   function zoomInAnimaatio() {
+ 
+    const nayta = document.querySelectorAll(".naytaZ");
+
+    //laskee elementtiä ennen olevan yläosan koon.
+    for (let i = 0; i < nayta.length; i++) {
+
+      const ikkunanKorkeus = window.innerHeight;
+
+      const elementYlaosa = nayta[i].getBoundingClientRect().top;
+      const elementNakyviin = 50;
+
+      //renderöi animaation 130px elementin jälkeen.
+      if (elementYlaosa < ikkunanKorkeus - elementNakyviin) {
+        nayta[i].classList.add("active");
+      } 
+      else {   
+        nayta[i].classList.remove("active");      
+      }
+    }
+  }
+  window.addEventListener("scroll", zoomInAnimaatio);
  
  
  
  
   /* =================================================================
-                   TYPE WRITER EFFECTI
+                        TYPE WRITER EFFECTI
     ================================================================= */
    var typeWriterElement = document.getElementById('typewriter');
  
@@ -124,7 +152,7 @@
  
      } else if(i < textArray[i].length+1) {
  
-       typeWriter(textArray[i], 0, function () {
+       typeWriter(textArray[i], 0, function (){
  
          StartWriter(i+1);
        });
@@ -137,7 +165,9 @@
  
  
  
-   // SCROLL SMOOTH //
+    /* =================================================================
+                        ANCHOR SMOOTH SCROLL
+    ================================================================= */
    $('.js-anchor-link').click(function(e){
  
      e.preventDefault();
@@ -152,6 +182,9 @@
    });
 
 
+    /* =================================================================
+                        SMOOTH SCROLLING
+    ================================================================= */
     jsScroll = document.getElementsByClassName('js-scroll')[0],
     height = jsScroll.getBoundingClientRect().height - 1,
     speed = 0.05
@@ -315,7 +348,7 @@
  
    
  /* =================================================================
-                   CONTACT FORM LÄHETYS
+                      CONTACT FORM LÄHETYS
    ================================================================== */
  
  
