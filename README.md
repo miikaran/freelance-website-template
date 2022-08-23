@@ -12,11 +12,9 @@
 
 <br>
 
-> ## MOBILE
 > ![audit](https://user-images.githubusercontent.com/88707539/185891131-34f0879d-fa7c-454e-a003-ed915520a318.PNG)
  
-> ## PC
-> ![audit2](https://user-images.githubusercontent.com/88707539/186084884-c35603d7-ee47-4f59-bbb5-fc61d200d7c2.PNG)
+
 
 
  
