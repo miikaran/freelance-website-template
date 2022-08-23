@@ -17,6 +17,7 @@
 }
 
 
+
 .naytaZ{
   position: relative;
   transform: translateZ(-142px);
@@ -28,7 +29,6 @@
   transform: translateZ(0);
   opacity: 1;
 }
-
 
 
 @media only screen and (max-width: 1023px) {
@@ -96,3 +96,4 @@ header.scroll-down{
   width: 100%;
   will-change: transform;
 }
+
